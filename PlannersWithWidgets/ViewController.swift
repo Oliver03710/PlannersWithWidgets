@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 
@@ -13,34 +14,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .yellow
     }
-
-
 }
 
-#if DEBUG
-import SwiftUI
-
-struct ViewControllerRepresentable: UIViewControllerRepresentable {
-    
-func updateUIViewController(_ uiView: UIViewController, context: Context) {
-    
-}
-    
-@available(iOS 13.0.0, *)
-func makeUIViewController(context: Context) -> UIViewController {
-    ViewController()
-    }
-}
-
-@available(iOS 13.0, *)
-struct ViewControllerRepresentable_PreviewProvider: PreviewProvider {
+struct ViewControllerPreview: PreviewProvider {
     static var previews: some View {
-        Group {
-            ViewControllerRepresentable()
-                .ignoresSafeArea()
-                .previewDisplayName(/*@START_MENU_TOKEN@*/"Preview"/*@END_MENU_TOKEN@*/)
-                .previewDevice(PreviewDevice(rawValue: "iPhone 14 pro"))
-        }
-        
+        ViewController().toPreview()
+            .ignoresSafeArea()
+            .previewDevice(PreviewDevice(rawValue: "iPhone 14 pro"))
     }
-} #endif
+}

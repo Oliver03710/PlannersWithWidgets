@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD1178FD2979219000EA967E /* Preview+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1178FC2979219000EA967E /* Preview+Extension.swift */; };
 		AD988A08297699E200C36443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD988A07297699E200C36443 /* AppDelegate.swift */; };
 		AD988A0A297699E200C36443 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD988A09297699E200C36443 /* SceneDelegate.swift */; };
 		AD988A0C297699E200C36443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD988A0B297699E200C36443 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD1178FC2979219000EA967E /* Preview+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview+Extension.swift"; sourceTree = "<group>"; };
 		AD988A04297699E200C36443 /* PlannersWithWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlannersWithWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD988A07297699E200C36443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD988A09297699E200C36443 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				AD988A07297699E200C36443 /* AppDelegate.swift */,
 				AD988A09297699E200C36443 /* SceneDelegate.swift */,
 				AD988A0B297699E200C36443 /* ViewController.swift */,
+				AD1178FC2979219000EA967E /* Preview+Extension.swift */,
 				AD988A10297699E300C36443 /* Assets.xcassets */,
 				AD988A12297699E300C36443 /* LaunchScreen.storyboard */,
 				AD988A15297699E300C36443 /* Info.plist */,
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1178FD2979219000EA967E /* Preview+Extension.swift in Sources */,
 				AD988A0C297699E200C36443 /* ViewController.swift in Sources */,
 				AD988A08297699E200C36443 /* AppDelegate.swift in Sources */,
 				AD988A0A297699E200C36443 /* SceneDelegate.swift in Sources */,
