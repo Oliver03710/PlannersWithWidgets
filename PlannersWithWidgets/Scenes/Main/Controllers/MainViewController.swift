@@ -8,18 +8,22 @@
 import UIKit
 import SwiftUI
 
-final class MainViewController: UIViewController {
+final class MainViewController: BaseViewController {
 
     // MARK: - Properties
-    private let mainView?
+    private let mainView = MainView()
     weak var coordinator: MainCoordinator?
     
     // MARK: - Life Cycle
+    override func loadView() {
+        view = mainView
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .yellow
     }
 }
+
 
 // MARK: - Preview
 struct ViewControllerPreview: PreviewProvider {
