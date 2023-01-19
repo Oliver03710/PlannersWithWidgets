@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  PlannersWithWidgets
 //
 //  Created by Junhee Yoon on 2023/01/17.
@@ -8,7 +8,7 @@
 import UIKit
 import SwiftUI
 
-class ViewController: UIViewController {
+final class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
 struct ViewControllerPreview: PreviewProvider {
     static var previews: some View {
-        ViewController().toPreview()
+        MainViewController().toPreview()
             .ignoresSafeArea()
             .previewDevice(PreviewDevice(rawValue: "iPhone 14 pro"))
     }
