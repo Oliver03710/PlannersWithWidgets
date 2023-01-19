@@ -7,14 +7,22 @@
 
 import UIKit
 
-class MainView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+final class MainView: BaseView {
+    
+    // MARK: - Properties
+    
+    
+    // MARK: - Init
+    override init(frame: CGRect) {
+        super.init(frame: frame)
     }
-    */
-
+    
+    // MARK: - Functions
+    override func configureUI() {
+        
+    }
+    
+    override func setConstraints() {
+        
+    }
 }
