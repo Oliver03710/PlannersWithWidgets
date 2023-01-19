@@ -12,6 +12,8 @@
 		AD1179072979377B00EA967E /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1179062979377B00EA967E /* SceneCoordinator.swift */; };
 		AD11790B2979384500EA967E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11790A2979384500EA967E /* MainCoordinator.swift */; };
 		AD11790E29793A2500EA967E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11790D29793A2500EA967E /* MainView.swift */; };
+		AD11791129793AE600EA967E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11791029793AE600EA967E /* BaseViewController.swift */; };
+		AD11791329793C0700EA967E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD11791229793C0700EA967E /* BaseView.swift */; };
 		AD988A08297699E200C36443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD988A07297699E200C36443 /* AppDelegate.swift */; };
 		AD988A0A297699E200C36443 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD988A09297699E200C36443 /* SceneDelegate.swift */; };
 		AD988A0C297699E200C36443 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD988A0B297699E200C36443 /* MainViewController.swift */; };
@@ -45,6 +47,8 @@
 		AD1179062979377B00EA967E /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		AD11790A2979384500EA967E /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		AD11790D29793A2500EA967E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AD11791029793AE600EA967E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AD11791229793C0700EA967E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		AD988A04297699E200C36443 /* PlannersWithWidgets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlannersWithWidgets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD988A07297699E200C36443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD988A09297699E200C36443 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 				AD1178FF29792F3100EA967E /* Protocols */,
 				AD11790229792F6B00EA967E /* Extensions */,
 				AD1179052979375600EA967E /* Common */,
+				AD11790F29793AB100EA967E /* BaseComponents */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -158,6 +163,31 @@
 				AD11790D29793A2500EA967E /* MainView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AD11790F29793AB100EA967E /* BaseComponents */ = {
+			isa = PBXGroup;
+			children = (
+				AD11791529793C2000EA967E /* ViewControllers */,
+				AD11791429793C1900EA967E /* Views */,
+			);
+			path = BaseComponents;
+			sourceTree = "<group>";
+		};
+		AD11791429793C1900EA967E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD11791229793C0700EA967E /* BaseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD11791529793C2000EA967E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD11791029793AE600EA967E /* BaseViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		AD9889FB297699E200C36443 = {
@@ -346,7 +376,9 @@
 				AD11790B2979384500EA967E /* MainCoordinator.swift in Sources */,
 				AD117904297936DA00EA967E /* Coordinator+Protocol.swift in Sources */,
 				AD988A0C297699E200C36443 /* MainViewController.swift in Sources */,
+				AD11791129793AE600EA967E /* BaseViewController.swift in Sources */,
 				AD1179072979377B00EA967E /* SceneCoordinator.swift in Sources */,
+				AD11791329793C0700EA967E /* BaseView.swift in Sources */,
 				AD988A08297699E200C36443 /* AppDelegate.swift in Sources */,
 				AD988A0A297699E200C36443 /* SceneDelegate.swift in Sources */,
 			);
