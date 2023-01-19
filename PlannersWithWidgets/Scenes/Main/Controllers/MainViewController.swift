@@ -22,6 +22,11 @@ final class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    deinit {
+        print("\(type(of: self)) Is Deinitialised")
+    }
+    
 }
 
 
