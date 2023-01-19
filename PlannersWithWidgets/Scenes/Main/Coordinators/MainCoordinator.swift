@@ -25,18 +25,18 @@ final class MainCoordinator: Coordinator {
         presenter.pushViewController(mainVC, animated: true)
     }
     
-    func pushVC() {
-        let child = FirstCoordinator(presenter: presenter)
-        child.parentCoordinator = self
-        childCoordinators.append(child)
-        child.start()
-    }
-    
-    func present() {
-        let presentVC = FirstViewController()
-        presentVC.coordinator = self
-        presenter.present(presentVC, animated: true)
-    }
+//    func pushVC() {
+//        let child = FirstCoordinator(presenter: presenter)
+//        child.parentCoordinator = self
+//        childCoordinators.append(child)
+//        child.start()
+//    }
+//
+//    func present() {
+//        let presentVC = FirstViewController()
+//        presentVC.coordinator = self
+//        presenter.present(presentVC, animated: true)
+//    }
     
     func childDidFinish(_ child: Coordinator?) {
         for (index, coordinator) in childCoordinators.enumerated() {
