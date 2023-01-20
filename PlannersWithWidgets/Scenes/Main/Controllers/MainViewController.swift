@@ -27,6 +27,27 @@ final class MainViewController: BaseViewController {
         print("\(type(of: self)) Is Deinitialised")
     }
     
+    // MARK: - Selectors
+    @objc func previousAction() {
+        
+    }
+    
+    @objc func nextAction() {
+        
+    }
+    
+    // MARK: - Functions
+    override func configureUI() {
+        setNavi()
+    }
+    
+    func setNavi() {
+        title = "달력"
+        let leftBarButton = UIBarButtonItem(title: "이전", style: .plain, target: self, action: #selector(previousAction))
+        let rightBarButton = UIBarButtonItem(title: "다음", style: .plain, target: self, action: #selector(nextAction))
+        navigationItem.leftBarButtonItem = leftBarButton
+        navigationItem.rightBarButtonItem = rightBarButton
+    }
 }
 
 
